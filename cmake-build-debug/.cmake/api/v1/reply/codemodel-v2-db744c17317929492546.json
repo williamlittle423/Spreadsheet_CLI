@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "assignment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "interactive::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-interactive-Debug-19cae9f8de3c6de59141.json",
+					"name" : "interactive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "model::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-model-Debug-05f6227a0bf2f63615ba.json",
+					"name" : "model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "testrunner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-testrunner-Debug-67b86dab4742777126ed.json",
+					"name" : "testrunner",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment/cmake-build-debug",
+		"source" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

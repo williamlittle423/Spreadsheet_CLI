@@ -1,4 +1,4 @@
-# Install script for directory: /Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment
+# Install script for directory: /Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

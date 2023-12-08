@@ -3,11 +3,46 @@
 
 #include "defs.h"
 
+#define MAX_ROWS 10
+#define MAX_COLS 7
+
+// Define the spreadsheet cell structure
+// text contains the textual value of the cell if it is an expression. i.e. '=A4+B3+3.6'
+// cellResult is the actual float value of the cell
+struct CellData {
+    float cellResult;
+    char* text;
+};
+
+// A directed graph structure is implemented to handle cell dependencies
+struct Graph {
+    int V;      // Number of vertices
+    int** matrix; // Adjacency matrix
+};
+
+// Initialize a directed graph with all zeros for each edge
+struct Graph* createDirectedGraph(int V);
+
+// Calculates a unique index the cell
+int calculateGraphIndex(char letter, char digit);
+
+// Function to add a direction edge from a source cell and a dependency cell
+void addDirectedEdge(struct Graph* graph, char sourceLetter, char sourceDigit, char depLetter, char depDigit);
+
+// Initialize an empty cell
+struct CellData* createCell();
+
+// The spreadsheet data structure is a MAX_ROWS x MAX_COLS 2d array
+// Each piece of data in the array is a pointer to a CellData struct
+struct CellData* spreadsheet[MAX_ROWS][MAX_COLS];
+
+struct Graph* dependencies;
+
 // Stack structure used for handling operands
 typedef struct {
     int top;
     int capacity;
-    int* array;
+    float* array;
 } Stack;
 
 // Initializes the data structure.
@@ -36,9 +71,11 @@ float pop(Stack* stack);
 // Performs an operation on two operands based on the character operator op
 float performOperation(float operand1, float operand2, char op);
 
-// Used to fully evaluate an expression
-float evaluateExpression(char* expression);
+// Used to fully evaluate an expression and add/remove cell dependencies
+float evaluateExpression(ROW r, COL c, char* expression);
 
+// USED FOR TESTING PURPOSES
+void printDirectedGraph(struct Graph* graph);
 
 // Sets the value of a cell based on user input.
 //

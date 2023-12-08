@@ -14,6 +14,7 @@ static char display[NUM_ROWS][NUM_COLS][CELL_DISPLAY_WIDTH + 1];
 
 int main() {
     memset(display, 0, sizeof(display));
+    model_init();
     run_tests();
     return 0;
 }
@@ -23,11 +24,14 @@ void update_cell_display(ROW row, COL col, const char *text) {
 }
 
 void assert_display_text(ROW row, COL col, const char *text) {
+    printf("Display Text: %s\nObjective: %s\n", display[row][col], text);
     assert(strcmp(text, display[row][col]) == 0);
 }
 
 void assert_edit_text(ROW row, COL col, const char *text) {
     char *value = get_textual_value(row, col);
+    // For testing purposes
+    printf("Value: %s\nText: %s\n", value, text);
     assert(value != NULL && strcmp(text, value) == 0);
-    free(value);
+//    free(value);
 }

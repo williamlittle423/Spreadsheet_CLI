@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment/cmake-build-debug"
+			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -383,7 +383,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment"
+			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment/cmake-build-debug"
+			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C/cmake-build-debug"
 		},
 		{
 			"name" : "assignment_IS_TOP_LEVEL",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Final_Assignment"
+			"value" : "/Users/williamlittle/Desktop/QU/Engineering/Third Year/ELEC 278/Excel_C"
 		}
 	],
 	"kind" : "cache",
